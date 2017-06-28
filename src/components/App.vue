@@ -115,7 +115,19 @@ input {
   cursor: pointer;
   background: none;
   border: none;
-  font-size: 12px;
+  font-size: 18px;
+}
+
+.done {
+  color: green;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 18px;
+}
+
+.buttons {
+  display: flex;
 }
 
 .form {
