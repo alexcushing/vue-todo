@@ -24,7 +24,7 @@ import TodoItem from './todo-item.vue';
     data () {
     return {
       current: "",
-      list : [{}]
+      list : []
     }
     },
     components: { TodoItem },
@@ -36,7 +36,7 @@ import TodoItem from './todo-item.vue';
         this.current = ''
       },
       deleteToDo(item) {
-        var index = this.list.indexOf({name: item.name, finished: item.finished});
+        var index = this.list.indexOf(item);
         this.list.splice(index,1)
       },
       finishToDo(item) {
