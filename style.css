@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Arvo');
+*:focus {
+    outline: none;
+}
+
+h1{
+  font-weight: 200;
+  color: #0660bd;
+}
+
+@keyframes fall-in {
+  0% {
+    opacity: 0;
+    margin-top: 100px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 15px;
+  }
+}
+
+
+body{
+  padding-top: 20px;
+  box-sizing: border-box;
+  font-family: 'Arvo', serif;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.add {
+  cursor: pointer;
+  padding: 3px;
+  padding-right: 6px;
+  font-size: 18px;
+  font-weight: bolder;
+  background: white;
+  border: solid 1px black;
+  border-left: none;
+  margin-left: 0px;
+  color: green;
+}
+
+input {
+  flex: 1;
+  padding: 3px;
+  font-size: 18px;
+  background: white;
+  border: solid 1px black;
+  border-right: none;
+  margin-right: 0px;
+}
+
+.add:focus {
+  outline: none;
+  border-left: none;
+}
+
+.items {
+  overflow-x: hidden;
+  white-space: nowrap;
+  text-overflow: ellipses;
+  width: 400px;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.item {
+  animation: fall-in .05s ease-in-out;
+  padding: 10px;
+  width: 390px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.del {
+  color: red;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 18px;
+}
+
+.done {
+  color: green;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 18px;
+}
+
+.undo {
+  color: orange;
+}
+
+.buttons {
+  display: flex;
+}
+
+.form {
+  margin: 20px 0 20px 0;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+}
+
+.finished {
+  text-decoration: line-through;
+}
+
+.edit-input {
+  text-align: right;
+  border: 0px;
+  flex: 1;
+}
